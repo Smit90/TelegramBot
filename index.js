@@ -33,9 +33,8 @@ bot.setWebHook(`${url}/bot${Bot_token}`);
 Promise.config({
     cancellation: true
 })
-var token = Bot_token;
 // Setup polling way
-var bot = new TelegramBot(token, { polling: true });
+// var bot = new TelegramBot(token, { polling: true });
 
 // Matches /echo [whatever]
 bot.onText(/\/echo (.+)/, function (msg, match) {
